@@ -18,9 +18,9 @@ export const Desestructuracion = () => {
         frenar: (marca) => console.log('Frena, ', marca)
     };
 
-    const { avanzar, color } = carro;
+    const { avanzar, color, modelo } = carro;
 
-    console.log(`Color: ${color}`);
+    console.log(`Color: ${color}, Modelo: ${modelo}`);
     avanzar();
     carro.frenar('Ferrari');
 
