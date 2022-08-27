@@ -1,5 +1,5 @@
 interface Carro {
-    color?: 'red' | 'yellow';
+    color: 'red' | 'yellow';
     modelo: number;
     placa: string;
     plazas: number;
@@ -18,9 +18,9 @@ export const Desestructuracion = () => {
         frenar: (marca) => console.log('Frena, ', marca)
     };
 
-    const { avanzar } = carro;
+    const { avanzar, color } = carro;
 
-    console.log(`Color: ${carro.color && carro.color}`);
+    console.log(`Color: ${color}`);
     avanzar();
     carro.frenar('Ferrari');
 
